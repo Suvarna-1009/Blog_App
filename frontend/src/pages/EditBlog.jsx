@@ -54,7 +54,7 @@ const EditBlog = () => {
     }
 
     try {
-      await axios.put(`http://localhost:4000/blog/edit/${id}`, data, {
+      await axios.put(`https://blog-app-e5dh.onrender.com/blog/edit/${id}`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,

@@ -28,7 +28,7 @@ const Signup = () => {
       data.append("image", formData.image);
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:4000/user/register",
+        "https://blog-app-e5dh.onrender.com/user/register",
         data,
         {
           headers: {

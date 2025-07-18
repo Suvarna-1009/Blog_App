@@ -34,7 +34,7 @@ const Dashboard = () => {
     data.append("image", formData.image);
 
     try {
-      const res = await axios.post("http://localhost:4000/blog/create", data, {
+      const res = await axios.post("https://blog-app-e5dh.onrender.com/blog/create", data, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUserBlogs = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/blog/user/blogs", {
+        const res = await axios.get("https://blog-app-e5dh.onrender.com/blog/user/blogs", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -70,7 +70,7 @@ const Dashboard = () => {
 
   const removeBlog = async (blogId) => {
     try {
-      const res = await axios.delete(`http://localhost:4000/blog/delete/${blogId}`, {
+      const res = await axios.delete(`https://blog-app-e5dh.onrender.com/blog/delete/${blogId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -167,7 +167,7 @@ const Dashboard = () => {
                       <td className="border px-4 py-2">{blog.category}</td>
                       <td className="border px-4 py-2">
                         <img
-                          src={`http://localhost:4000/images/${blog.image}`}
+                          src={`https://blog-app-e5dh.onrender.com/images/${blog.image}`}
                           alt={blog.title}
                           className="w-16 h-16 object-cover mx-auto"
                         />

@@ -23,7 +23,7 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:4000/user/login",
+        "https://blog-app-e5dh.onrender.com/user/login",
         formData,
         {
           headers: {
