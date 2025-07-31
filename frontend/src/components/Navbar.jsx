@@ -19,7 +19,7 @@ const Navbar = () => {
             className="cursor-pointer hover:text-blue-800 duration-300"
           >
           <p className="hidden sm:block text-5xl">
-            Simple <span className="font-bold text-5xl">Blog</span> </p>
+            Modern <span className="font-bold text-5xl">Blog</span> </p>
           </Link>
          
         </div>
